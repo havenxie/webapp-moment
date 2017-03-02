@@ -1,3 +1,7 @@
+### 显示效果
+
+<img src="show.gif">
+
 ### 安装项目：
 1. 将项目git到本地
 2. 项目根目录运行 npm install 
@@ -14,5 +18,3 @@
 4. 运行gulp
 5. localhost中找到该工程生成的build文件夹即可运行。
 
-### 显示效果
-<img src="show.gif">
