@@ -13,3 +13,6 @@
 3. 工程放到WampServer软件的www文件夹下，启动软件。关闭php服务的https安全策略。
 4. 运行gulp
 5. localhost中找到该工程生成的build文件夹即可运行。
+
+### 显示效果
+<img src="show.gif">

@@ -463,6 +463,161 @@
 					}
 				}
 			}
+			//文章详细页
+			.detail {
+				margin-top: 1.6rem;
+				max-width: 580px;
+				padding: 0 .8rem;
+
+				p {
+					// margin: 1em 0;
+				}
+				.auth_author_mark {
+					position: absolute;
+					top: 18px;
+					left: 22px;
+					width: 13px;
+					height: 13px;
+					background-color: #f7f77f;
+					border-radius: 50%;
+				}
+				#header {
+					font-size: (14rem / 20);
+					line-height: 1.4;
+
+					#column-top {
+						display: inline-block;
+						padding: 3px 10px;
+						background-color: #dadada;
+					}
+					#title {
+						// line-height: 100%;
+						margin: .8rem 0 0;
+						color: #2f2f2f;
+						font-size: (40rem / 32);
+						font-weight: bold;
+						letter-spacing: (2rem / 20);
+					}
+					.info {
+						color: #888;
+						font: (18rem / 20) Helvetica, Arial, sans-serif;
+						line-height: 1.62;
+						margin-top: (12rem / 20);
+
+						.author_avatar_link {
+							position: relative;
+
+							#author_avatar {
+								display: inline;
+								margin-right: 10px;
+								border-radius: 50%;
+								vertical-align: middle;
+								max-width: 34px;
+								height: auto;
+							}
+						}
+						#author {
+							display: inline-block;
+						}
+					}
+				}
+				#content {
+					font-size: 100%;
+					padding-top: 1rem;
+
+					p {
+						font: 100% Arial, sans-serif, Helvetica, Arial;
+						line-height: 1.62;
+						margin: .6rem 0;
+						letter-spacing: (1rem / 32);
+					}
+					.content_img {
+						margin: (48rem / 32) 0;
+						width: 100%;
+
+						img {
+							max-width: 100%;
+							height: auto;
+							display: block;
+						}
+						p {
+							font-size: (14rem / 20);
+						}
+						hr {
+							border-width: 0;
+							margin: 0;
+						}
+					}
+					// 打鸡血
+					.status-card {
+						margin-top: (40rem / 32);
+						background-color: #ddd;
+						padding: (26rem / 32) (8rem / 32);
+
+						.hd {
+							img {
+								display: inline-block;
+								width: auto;
+								margin-right: (16rem /32);
+								border-radius: 50%;
+								overflow: hidden;
+								vertical-align: middle;
+							}
+							a {
+							}
+						}
+						.bd {
+							p {
+								padding: 0;
+							}
+							img {
+								display: inline-block;
+								margin-top: (68rem /32);
+							}
+						}
+					}
+				}
+				#footer {
+					font-size: 16px;
+					padding-top: (10rem / 20);
+
+					.author-feed {
+						.author-name {
+							display: inline-block;
+
+							.author_avatar_link2 {
+								position: relative;
+
+								#author_avatar2 {
+									display: inline;
+									margin-right: 10px;
+									border-radius: 50%;
+									vertical-align: middle;
+									max-width: 34px;
+									height: auto;
+								}
+							}
+						}
+					}
+					.author-feed, .column, .url_box {
+						border-top: 1px solid #ccc;
+						padding: (16rem / 20) 0;
+						font-size: (16rem / 20);
+					}
+					.url_box {
+						margin-bottom: (10rem / 20);
+						color: #888;
+					}
+					.column {
+						a {
+							display: inline-block;
+							padding: 3px 10px;
+							border: 1px solid #37a;
+							border-radius: 5px;
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -480,159 +635,4 @@
 	z-index: 999;
 	transition: all .5s 0.1s;
 	overflow: hidden;
-}
-//文章详细页
-.detail {
-	margin-top: 1.6rem;
-	max-width: 580px;
-	padding: 0 .8rem;
-
-	p {
-		// margin: 1em 0;
-	}
-	.auth_author_mark {
-		position: absolute;
-		top: 18px;
-		left: 22px;
-		width: 13px;
-		height: 13px;
-		background-color: #f7f77f;
-		border-radius: 50%;
-	}
-	#header {
-		font-size: (14rem / 20);
-		line-height: 1.4;
-
-		#column-top {
-			display: inline-block;
-			padding: 3px 10px;
-			background-color: #dadada;
-		}
-		#title {
-			// line-height: 100%;
-			margin: .8rem 0 0;
-			color: #2f2f2f;
-			font-size: (40rem / 32);
-			font-weight: bold;
-			letter-spacing: (2rem / 20);
-		}
-		.info {
-			color: #888;
-			font: (18rem / 20) Helvetica, Arial, sans-serif;
-			line-height: 1.62;
-			margin-top: (12rem / 20);
-
-			.author_avatar_link {
-				position: relative;
-
-				#author_avatar {
-					display: inline;
-					margin-right: 10px;
-					border-radius: 50%;
-					vertical-align: middle;
-					max-width: 34px;
-					height: auto;
-				}
-			}
-			#author {
-				display: inline-block;
-			}
-		}
-	}
-	#content {
-		font-size: 100%;
-		padding-top: 1rem;
-
-		p {
-			font: 100% Arial, sans-serif, Helvetica, Arial;
-			line-height: 1.62;
-			margin: .6rem 0;
-			letter-spacing: (1rem / 32);
-		}
-		.content_img {
-			margin: (48rem / 32) 0;
-			width: 100%;
-
-			img {
-				max-width: 100%;
-				height: auto;
-				display: block;
-			}
-			p {
-				font-size: (14rem / 20);
-			}
-			hr {
-				border-width: 0;
-				margin: 0;
-			}
-		}
-		// 打鸡血
-		.status-card {
-			margin-top: (40rem / 32);
-			background-color: #ddd;
-			padding: (26rem / 32) (8rem / 32);
-
-			.hd {
-				img {
-					display: inline-block;
-					width: auto;
-					margin-right: (16rem /32);
-					border-radius: 50%;
-					overflow: hidden;
-					vertical-align: middle;
-				}
-				a {
-				}
-			}
-			.bd {
-				p {
-					padding: 0;
-				}
-				img {
-					display: inline-block;
-					margin-top: (68rem /32);
-				}
-			}
-		}
-	}
-	#footer {
-		font-size: 16px;
-		padding-top: (10rem / 20);
-
-		.author-feed {
-			.author-name {
-				display: inline-block;
-
-				.author_avatar_link2 {
-					position: relative;
-
-					#author_avatar2 {
-						display: inline;
-						margin-right: 10px;
-						border-radius: 50%;
-						vertical-align: middle;
-						max-width: 34px;
-						height: auto;
-					}
-				}
-			}
-		}
-		.author-feed, .column, .url_box {
-			border-top: 1px solid #ccc;
-			padding: (16rem / 20) 0;
-			font-size: (16rem / 20);
-		}
-		.url_box {
-			margin-bottom: (10rem / 20);
-			color: #888;
-		}
-		.column {
-			a {
-				display: inline-block;
-				padding: 3px 10px;
-				border: 1px solid #37a;
-				border-radius: 5px;
-			}
-		}
-	}
 }
