@@ -285,7 +285,7 @@
 				}
 				.brief {
 					position: relative;
-					max-height: (150rem / 32);
+					// max-height: (150rem / 32);
 
 					p {
 						line-height: 1.6;
@@ -337,11 +337,12 @@
 				}
 				.brief {
 					min-height: (250rem / 32);
+					// overflow: hidden;
 
 					p {
 						height: (260rem / 32);
 						padding-right: (276rem / 32);
-						line-height: 1.25;
+						line-height: 1.3;
 						font-size: 34rem / 32;
 						overflow: hidden;
 						text-overflow: ellipsis;
@@ -364,7 +365,11 @@
 					padding-right: (18rem / 32);
 					background: url(../images/gallery.png);
 					background-size: contain;
-					.box-sizing;
+
+					img {
+						height: 100%;
+						display: block;
+					}
 				}
 			}
 			// 热门作者
