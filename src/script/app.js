@@ -1,7 +1,7 @@
 
-var Yike = angular.module('Yike', ['ngRoute', 'Controllers', 'Directives', 'Services']);
+var Moment = angular.module('Moment', ['ngRoute', 'Controllers', 'Directives', 'Services']);
 
-Yike.config(['$routeProvider', function ($routeProvider) {
+Moment.config(['$routeProvider', function ($routeProvider) {
 
 	$routeProvider.when('/today', {
 		templateUrl: './views/today.html',
@@ -40,7 +40,7 @@ Yike.config(['$routeProvider', function ($routeProvider) {
 	});
 }]);
 
-Yike.run(['$rootScope','$window','$location','jQLite', function ($rootScope, $window, $location, jQLite) {
+Moment.run(['$rootScope','$window','$location','jQLite', function ($rootScope, $window, $location, jQLite) {
 	// 设置类名初始值
 	$rootScope.collapsed = false;
 	$rootScope.menu = true;//默认显示menu
