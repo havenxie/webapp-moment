@@ -286,7 +286,6 @@
 				.brief {
 					position: relative;
 					max-height: (150rem / 32);
-					overflow: hidden;
 
 					p {
 						line-height: 1.6;
@@ -294,6 +293,10 @@
 						font-size: 30rem / 32;
 						padding-right: 150rem / 32;
 						overflow: hidden;
+						text-overflow: ellipsis;
+						display: -webkit-box;
+						-webkit-line-clamp: 3;
+						-webkit-box-orient: vertical;
 					}
 					p.only {
 						padding-right: 0;
@@ -334,13 +337,17 @@
 				}
 				.brief {
 					min-height: (250rem / 32);
-					text-overflow: ellipsis;
 
 					p {
 						height: (260rem / 32);
 						padding-right: (276rem / 32);
 						line-height: 1.25;
 						font-size: 34rem / 32;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						display: -webkit-box;
+						-webkit-line-clamp: 6;
+						-webkit-box-orient: vertical;
 					}
 				}
 				.thumb {
