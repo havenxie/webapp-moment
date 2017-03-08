@@ -1,6 +1,6 @@
 ### 显示效果
 
-<img src="show.gif">
+<img src="show1.gif">
 
 ### 安装项目：
 1. 将项目git到本地

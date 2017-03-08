@@ -10,7 +10,7 @@ angular.module('Controllers', ['Services'])
 .controller('NavController', ['$scope', function ($scope) {
 	// 导航数据
 	$scope.navs = [
-		{link: '#/today', text: '今日一刻', icon: 'icon-home'},
+		{link: '#/today', text: '今日推荐', icon: 'icon-home'},
 		{link: '#/older', text: '往期内容', icon: 'icon-file-empty'},
 		{link: '#/author', text: '热门作者', icon: 'icon-pencil'},
 		{link: '#/category', text: '栏目浏览', icon: 'icon-menu'},
@@ -28,13 +28,14 @@ angular.module('Controllers', ['Services'])
 	'ApiService',
 	'$location',
 	 function ($rootScope, $scope, $filter, TitleService, ApiService, $location) {
-	TitleService.configTitle('今日一刻', 0, true, true);
+	TitleService.configTitle('今日推荐', 0, true, true);
 	var prevPage = $rootScope.prevPage;
 	if(prevPage && (prevPage.indexOf('today') > 0))
 	{
 		$rootScope.prevPage = $location.path();
 		return true;
 	}
+	var scrollTop = document.body.scrollTop;//hack
 	$rootScope.prevPage = $location.path();
 	var today = $filter('date')(new Date, 'yyyy-MM-dd');
 	var url = 'https://moment.douban.com/api/stream/date/'+ today + '?alt=json&apikey=0bcf52793711959c236df76ba534c0d4&app_version=1.7.4&douban_udid=d623045db9fcb0d5243174c1bf1a675f887047c0&format=full&udid=9a34d8b038ff38971050199b0c5ee9c60c6d1ca3&version=6';
@@ -62,6 +63,7 @@ angular.module('Controllers', ['Services'])
 		$rootScope.prevPage = $location.path();
 		return true;
 	}
+	var scrollTop = document.body.scrollTop;//hack
 	$rootScope.prevPage = $location.path();
 	var time = new Date();
 	var oldTime = new Date(time.getTime() - 86400000);
