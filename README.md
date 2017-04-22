@@ -1,6 +1,6 @@
 ### 显示效果
 
-<img src="show1.gif">
+<img src="other/show1.gif">
 
 ### 安装项目：
 1. 将项目git到本地
@@ -18,3 +18,14 @@
 4. 运行gulp
 5. localhost中找到该工程生成的build文件夹即可运行。
 
+### 有什么不明白或者想找我交流的朋友可以和我联系
+
+| 个人微信 | 个人公众号 |
+|:----:|:----:|
+| ![我的微信](other/wechat.jpg) |  ![我的微信](other/dingyue.jpg) |
+
+### 有兴趣的小伙伴可以一起来提交代码。。。
+
+## 许可
+
+[MIT](./LICENSE) &copy; [havenxie](http://github.com/havenxie)
