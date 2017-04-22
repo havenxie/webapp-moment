@@ -18,3 +18,8 @@
 4. 运行gulp
 5. localhost中找到该工程生成的build文件夹即可运行。
 
+### 有兴趣的小伙伴可以一起来提交代码。。。
+
+## 许可
+
+[MIT](./LICENSE) &copy; [havenxie](http://github.com/havenxie)
